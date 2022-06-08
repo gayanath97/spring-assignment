@@ -1,9 +1,10 @@
-package service;
+package service.serviceImpl;
 
 import dao.CustomerDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import service.CustomerService;
 import util.CommonResponse;
 
 @Service
@@ -27,5 +28,10 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public CommonResponse getCustomersByZipcode(String zipcode) {
         return customerDAO.getCustomersByZipcode(zipcode);
+    }
+
+    @Override
+    public CommonResponse getByCsvFormat(String id) {
+        return customerDAO.getByCsvFormat(id);
     }
 }

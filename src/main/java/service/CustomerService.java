@@ -10,4 +10,6 @@ public interface CustomerService {
     public CommonResponse getCustomersByName(String name);
 
     public CommonResponse getCustomersByZipcode(String zipcode);
+
+    public CommonResponse getByCsvFormat(String id);
 }

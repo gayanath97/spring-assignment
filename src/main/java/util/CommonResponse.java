@@ -12,15 +12,8 @@ public class CommonResponse {
     private List<Object> payload = null;
     private List<String> errorMessages = new ArrayList<>();
     private boolean status = false;
-    private Customer customer;
 
-    public Customer getCustomer() {
-        return customer;
-    }
 
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
-    }
 
     public List<Object> getPayload() {
         return payload;

@@ -30,4 +30,11 @@ public class CustomerController {
     public CommonResponse getCustomersByZipcode(@PathVariable String zipcode){
         return customerService.getCustomersByZipcode(zipcode);
     }
+
+    @GetMapping("/{id}")
+    public CommonResponse getByCsvFormat(@PathVariable String id){
+        return customerService.getByCsvFormat(id);
+    }
+
+
 }
